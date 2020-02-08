@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<title>Project One - Subpage One</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Playfair+Display&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="index.html"><img src="images/miller-logo2.jpg"></a>	
+		</div>
+	<nav>
+		<!-- Global naviagtion stuff here, but move this or delete this to your liking. Same goes for the rest -->
+		<ul class="topnav">
+			<li><a href="subpage-one.html">About</a></li>
+			<li><a href="music.html">Music</a></li>
+			<li><a href="death.html">September 7, 2018</a></li>	
+		</ul>
+	</nav>
+	</header>
+	<div class="swimming">
+		<div class="marquee">
+			<div class="track">
+				<div class="content">&nbsp;BLUE SLIDE PARK  -  WATCHING MOVIES WITH THE SOUND OFF  -  GO:OD AM  -  DIVINE FEMININE  -  SWIMMING  -  CIRCLES  -  BLUE SLIDE PARK  -  WATCHING MOVIES WITH THE SOUND OFF  -  GO:OD AM  -  DIVINE FEMININE  -  SWIMMING  -  CIRCLES  -
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	
+	<div class="grid-music">
+   		<img class="grid-item" src="images/blue-slide-park.jpg">
+   		
+   
+    	<img class="grid-item two" src="images/watching-movies.jpg">
+    	<img class="grid-item" src="images/good-am.jpg">
+    	<img class="grid-item" src="images/divine-feminine.jpg">
+    	<img class="grid-item" src="images/swimming.jpg">
+    	<img class="grid-item" src="images/mac-miller.jpg">
+   
+  	</div>
+
+  	<audio id="player">
+  		<source src="audio/missed-calls.mp3" type="audio/mp3">
+  		<source src="audio/objects.mp3" type="audio/mp3">
+  		<source src="audio/weekend.mp3" type="audio/mp3">
+  		<source src="audio/dang.mp3" type="audio/mp3">
+  		<source src="audio/self-care.mp3" type="audio/mp3">
+  		<source src="audio/good-news.mp3" type="audio/mp3">
+  	</audio>
+
+</body>
+<footer>
+		<!-- footer content here -->
+			<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="footer-container">
+		<div>
+			<p class="footer1">Malcolm James McCormick</p>
+			<br>
+			<br>
+			<p class="footer2">Swimming In Circles</p>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="footer-links">
+			<ul>
+			<li><a href="https://www.macmillerswebsite.com/">Website</a></li>
+			<li><a href="https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U">Spotify</a></li>
+			<li><a href="https://www.youtube.com/user/TreeJTV">Youtube</a></li>
+		</ul>
+		<div class="footer-at">
+    	&copy; Charlie Matson's Mac Miller Website
+	</div>
+		</div>
+  
+	<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</footer>
+	<!-- link for jquery -->
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  	crossorigin="anonymous">
+  	</script>
+  	<script>
+  		// Blue Slide Park
+  		$('.grid-item:nth-child(1)').click(function(){
+  			if ($('audio#player')[0].paused == false ){
+  				$('audio#player')[0].pause()
+  				$('audio#player')[0].currentTime = 0
+  			} else {
+  				$('source').attr('src', 'audio/missed-calls.mp3')
+  				$('audio#player')[0].load()  				
+  				$('audio#player')[0].play()
+  			}
+  		})
+		// Watching movies with the sound off
+  		$('.grid-item:nth-child(2)').click(function(){
+  			if ($('audio#player')[0].paused == false ){
+  				$('audio#player')[0].pause()
+  				$('audio#player')[0].currentTime = 0
+  			} else {
+  				$('source').attr('src', 'audio/objects.mp3')
+  				$('audio#player')[0].load()
+  				$('audio#player')[0].play()
+  			}
+  		})
+  		// GO:OD AM
+  		$('.grid-item:nth-child(3)').click(function(){
+  			if ($('audio#player')[0].paused == false ){
+  				$('audio#player')[0].pause()
+  				$('audio#player')[0].currentTime = 0
+  			} else {
+  				$('source').attr('src', 'audio/weekend.mp3')
+  				$('audio#player')[0].load()
+  				$('audio#player')[0].play()
+  			}
+  		})
+  		// divine feminine
+  		$('.grid-item:nth-child(4)').click(function(){
+  			if ($('audio#player')[0].paused == false ){
+  				$('audio#player')[0].pause()
+  				$('audio#player')[0].currentTime = 0
+  			} else {
+  				$('source').attr('src', 'audio/dang.mp3')
+  				$('audio#player')[0].load()
+  				$('audio#player')[0].play()
+  			}
+  		})
+  		// swimming 
+  		$('.grid-item:nth-child(5)').click(function(){
+  			if ($('audio#player')[0].paused == false ){
+  				$('audio#player')[0].pause()
+  				$('audio#player')[0].currentTime = 0
+  			} else {
+  				$('source').attr('src', 'audio/self-care.mp3')
+  				$('audio#player')[0].load()
+  				$('audio#player')[0].play()
+  			}
+  		})
+  		// circles
+  		$('.grid-item:nth-child(6)').click(function(){
+  			if ($('audio#player')[0].paused == false ){
+  				$('audio#player')[0].pause()
+  				$('audio#player')[0].currentTime = 0
+  			} else {
+  				$('source').attr('src', 'audio/good-news.mp3')
+  				$('audio#player')[0].load()
+  				$('audio#player')[0].play()
+  			}
+  		})
+  		
+
+  	</script>
+  	<!-- link for your script file -->
+  	<script src="js/script.js"></script>
+</body>
+</html>
+</html>
